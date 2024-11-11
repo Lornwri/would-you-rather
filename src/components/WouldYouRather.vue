@@ -46,8 +46,8 @@ function choiceMade() {
 <style scoped>
 
 #wyr {
-  background-color: brown;
-  padding: 10px;
+  background-color: lightcoral;
+  padding: 15px;
   width: 500px;
   height: 500px;
   border: 1px solid black;
@@ -58,8 +58,9 @@ function choiceMade() {
 
 #answers {
   padding: 10px;
-  background-color: brown;
+  background-color: lightcoral;
   border: 2px solid black;
   border-radius: 10px;
+  text-align: center;
 }
 </style>
