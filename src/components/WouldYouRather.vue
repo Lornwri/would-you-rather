@@ -32,10 +32,10 @@ function choiceMade() {
   <br>
   <br>
   <!--Create buttons for answers using HTML value -->
-  <input v-model="choice" v-bind:value="answer1" type="radio" id="answer-1">
+  <input v-model="choice" v-bind:value="answer1" type="radio" id="answer-1" v-on:change="choiceMade">
   <label for="answer-1">{{answer1}}</label>
   
-  <input v-model="choice" v-bind:value="answer2" type="radio" id="answer-2">
+  <input v-model="choice" v-bind:value="answer2" type="radio" id="answer-2" v-on:change="choiceMade">
   <label for="answer-2">{{answer2}}</label>
     </div>
     
@@ -46,7 +46,7 @@ function choiceMade() {
 <style scoped>
 
 #wyr {
-  background-color: lightcoral;
+  background-color: brown;
   padding: 15px;
   width: 500px;
   height: 500px;
@@ -54,12 +54,12 @@ function choiceMade() {
   border-radius: 10px;
   text-align: center;
   font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #answers {
   padding: 10px;
-  background-color: lightcoral;
-  border: 2px solid black;
+  background-color: brown;
   border-radius: 10px;
   text-align: center;
 }
