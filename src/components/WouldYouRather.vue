@@ -28,11 +28,10 @@ const choice = ref('')
   
   <input v-model="choice" v-bind:value="answer2" type="radio" id="answer-2">
   <label for="answer-2">{{answer2}}</label>
-  
   <br>
   <br>
   
-  <button v-on:click="$emit('answer', choice)">Submit</button>
+  <button v-on:click="$emit('answer-selected', choice)">Submit</button>
   
   
 </template>
